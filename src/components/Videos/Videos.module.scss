@@ -1,0 +1,37 @@
+@import '../../assets/styles/partials/breakpoints';
+.allVideosCont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.allVideosWrapper {
+  padding: 25px 0 0;
+  max-width: 1600px;
+  margin: auto;
+}
+
+@media screen and (max-width: $large) {
+  .allVideosCont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .allVideosCont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: $small) {
+  .allVideosCont {
+    grid-template-columns: 1fr;
+  }
+  .allVideosHeader {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .allVideosWrapper {
+    padding: 25px 0;
+  }
+}

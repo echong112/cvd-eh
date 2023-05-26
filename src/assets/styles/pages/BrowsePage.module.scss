@@ -1,0 +1,61 @@
+@import '../partials/colors';
+@import '../partials/breakpoints';
+// This needs to be removed
+
+.searchFilterCont {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 55px;
+  padding: 0 3rem;
+  background-color: white;
+  z-index: 999999;
+}
+
+// This needs to be removed
+.searchContainer {
+  width: 100%;
+  margin-top: 25px;
+  border-bottom: $dark-grey 1px solid;
+  input {
+    border: none;
+    padding: 15px 15px 15px;
+    width: 95%;
+  }
+  ::placeholder {
+    color: #b59343;
+  }
+  button {
+    border: none;
+  }
+}
+// This needs to be removed
+
+.dropdown {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  text-align: left;
+  color: $light-grey;
+  border: none;
+  width: 120px;
+  padding: 10px 5px;
+  margin-top: 15px;
+}
+// This needs to be removed
+
+.selectContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.regularBrowsePage {
+  margin-top: 6rem;
+}
+// This needs to be removed
+@media screen and (max-width: $small) {
+  .searchFilterCont {
+    padding: 0 2rem;
+  }
+}

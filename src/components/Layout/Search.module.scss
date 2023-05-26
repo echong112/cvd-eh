@@ -1,0 +1,100 @@
+@import '../../assets/styles/partials/breakpoints';
+
+.searchBarCont {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  z-index: 999999;
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.textInput {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  height: 56px;
+  left: 420px;
+  padding-left: 2rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.searchButton {
+  height: 56px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.searchResults {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  min-width: 460px;
+  z-index: 6;
+  background-color: white;
+  max-height: 66vh;
+  padding: 25px;
+  border: #f2f2f2 2px solid;
+  overflow-y: scroll;
+}
+
+.closed {
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  min-width: 0;
+  border: none;
+}
+
+.hits {
+  display: flex;
+  margin-bottom: 25px;
+  width: 100%;
+  width: 420px;
+  cursor: pointer;
+  align-items: center;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+}
+
+.thumbnail {
+  margin-right: 15px;
+  width: 200px;
+}
+
+.brand {
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  > p {
+    margin-right: 5px;
+  }
+}
+
+.clearQuery {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  // height: 10px;
+  font-size: 15px;
+}

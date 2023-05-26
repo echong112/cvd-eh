@@ -1,0 +1,128 @@
+@import '../../assets/styles/partials/breakpoints';
+.playlistContainer {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  right: -2000px;
+  transition: all 0.5s ease-in-out;
+}
+
+.opened {
+  right: 0;
+}
+
+.playlist {
+  z-index: 9999;
+  width: 50%;
+  top: 70px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  overflow: scroll;
+  background-color: #f9f8f8;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.buttonContainer {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    padding: 8px 10px;
+    font-family: Lato;
+    background-color: #b59444;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    &:hover {
+      background-color: #fff;
+      color: #b59444;
+    }
+    &:focus {
+      background-color: #a5a5a5;
+    }
+  }
+}
+
+.headerCont {
+  height: 1rem;
+  margin-top: 4rem;
+}
+
+.playlistRowCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.videoTitle {
+  cursor: pointer;
+  &:hover {
+    color: #b59444;
+  }
+}
+
+.singleVidRow {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #eaeaea solid;
+  padding-bottom: 0.5rem;
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #a5a5a5;
+  }
+  :nth-child(1) {
+    width: 40%;
+  }
+  :nth-child(2) {
+    width: 25%;
+  }
+  :nth-child(3) {
+    width: 5%;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+    width: 9px;
+    background: none;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .playlist {
+    width: 100%;
+  }
+  .buttonContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+
+.closer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}

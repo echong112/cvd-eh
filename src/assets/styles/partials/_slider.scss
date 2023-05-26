@@ -1,0 +1,9 @@
+/* the parent */
+.slick-list {
+  margin: 0 -15px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #cc9900 !important;
+}

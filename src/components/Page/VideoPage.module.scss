@@ -1,0 +1,115 @@
+$button-padding: 10px;
+
+.brandName {
+  color: #b59444;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.inner {
+  position: relative;
+}
+
+.title {
+  color: #a5a5a5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: none;
+  max-width: 655px;
+  margin: 25px 0;
+}
+
+.inner,
+.iframeContainer {
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.iframeContainer {
+  position: relative;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  top: $button-padding;
+  height: 100px;
+  width: 150px;
+  background: rgba(35, 35, 35, 0.5);
+  color: white;
+  padding: $button-padding;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.next {
+  right: $button-padding;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.previous {
+  left: $button-padding;
+  text-align: left;
+}
+
+.buttonTitle {
+  font-weight: 300;
+}
+
+.brand {
+  font-weight: normal;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 100px;
+  button {
+    font-size: 3rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+.playerWrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.url {
+  padding-top: 1rem;
+}

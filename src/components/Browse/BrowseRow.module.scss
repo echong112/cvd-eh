@@ -1,0 +1,114 @@
+@import "../../assets/styles/partials/colors";
+@import "../../assets/styles/partials/fonts";
+@import "../../assets/styles/partials/breakpoints";
+
+.brand {
+  margin-bottom: 25px;
+}
+
+.brandName {
+  font-size: 1rem;
+  color: $dark-grey;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.works {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: flex-start;
+}
+
+.work {
+  margin-right: 5px;
+  cursor: pointer;
+  width: 204px;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+.thumbnail {
+  height: 114px;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.selectedWork {
+  margin-bottom: 1rem;
+  width: 100%;
+  .thumbnail {
+    width: 100%;
+    height: 356px;
+  }
+}
+
+.button {
+  width: 150px;
+  height: 100%;
+  background: white;
+  box-sizing: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.title {
+  height: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+  width: 90%;
+}
+
+.meta {
+  font-size: 0.75rem;
+  color: $dark-grey;
+  font-weight: 300;
+}
+
+//selected brands styles
+.selected {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+.selectedThumbnail {
+  grid-column: 1 / span 2;
+}
+
+.selectedButton {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  font-family: tradeGothicBC20;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  img {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .meta {
+    margin-bottom: 1rem;
+  }
+
+  .work {
+    margin-right: 0;
+  }
+}

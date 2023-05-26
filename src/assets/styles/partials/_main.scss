@@ -1,0 +1,10 @@
+main {
+  padding: 3rem;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 668px) {
+  main {
+    padding: 2rem;
+  }
+}

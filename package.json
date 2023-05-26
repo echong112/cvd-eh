@@ -1,0 +1,32 @@
+{
+  "name": "cvd-3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "production": "scripts/production.sh",
+    "staging": "scripts/staging.sh"
+  },
+  "dependencies": {
+    "firebase": "^8.10.1",
+    "flamelink": "^1.0.0-rc.1",
+    "framer-motion": "^7.0.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.4.0",
+    "react-loading-spin": "^2.1.9",
+    "react-player": "^2.10.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "typesense": "^1.2.2"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "sass": "^1.51.0"
+  }
+}

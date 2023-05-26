@@ -1,0 +1,31 @@
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  top: $button-padding;
+  height: 80px;
+  width: 150px;
+  background: rgba(35, 35, 35, 0.5);
+  color: white;
+  padding: $button-padding;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.next {
+  right: $button-padding;
+  text-align: right;
+}
+
+.previous {
+  left: $button-padding;
+  text-align: left;
+}
